@@ -10,6 +10,6 @@ This algorithm has linear space complexity. The input space has linear complexit
 
 The issue with the provided selection sort algorithm was that it did not properly sort the first item: i.e. swapping stopped at the *second* index instead of the first. 
 
-This algorithm runs in $O(n^{2})$. The inner `while` loop may be converted to a `for` loop over `j = i down to 0`, which is mathematically represented as $\sum_{i=0}^{|A|} \sum_{j=0}^{i-1}1 = \sum_{i=0}^{|A|}i= \frac{|A|(|A| - 1)}{2} = O(n^{2})$.
+This algorithm runs in $O(n^{2})$. The inner `while` loop may be converted to a `for` loop over `j = i down to 0`, which is mathematically represented as $\sum_{i=0}^{|A|} \sum_{j=0}^{i-1}1 = \sum_{i=0}^{|A|}i= \frac{|A|(|A| + 1)}{2} = O(n^{2})$.
 
 The space complexity is linear for total complexity. It is linear for input space; it is constant for auxiliary space (as all variables may be hoisted to the outermost scope), so the linearity dominates for the overall space complexity.
